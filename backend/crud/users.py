@@ -1,6 +1,6 @@
 from sqlmodel import Session, select
-from models.users import UserInDB
-from utils.security import hash_password
+from backend.models.users import UserInDB
+from backend.utils.security import hash_password
 
 
 def get_user_by_email(session: Session, email: str):

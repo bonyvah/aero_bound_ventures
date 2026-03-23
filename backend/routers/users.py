@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
-from schemas.users import UserCreate, UserRead
-from crud.users import get_user_by_email, create_user
-from utils.email import send_email_async
+from backend.schemas.users import UserCreate, UserRead
+from backend.crud.users import get_user_by_email, create_user
+from backend.utils.email import send_email_async
 
 router = APIRouter(prefix="/api")
 
